@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7ADEA3F8-D494-4039-BB4B-6C3E981FCC24</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PestControl</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B9AABA08-A632-4E41-9A35-597D12E7C02F</key>
+		<string>https://github.com/karlandreas/iOSGames.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PestControl/PestControl.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B9AABA08-A632-4E41-9A35-597D12E7C02F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/karlandreas/iOSGames.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B9AABA08-A632-4E41-9A35-597D12E7C02F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B9AABA08-A632-4E41-9A35-597D12E7C02F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSGames</string>
+		</dict>
+	</array>
+</dict>
+</plist>

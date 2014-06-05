@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2252AC8119407B43005556B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252AC8019407B43005556B4 /* Foundation.framework */; };
+		2252AC8319407B43005556B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252AC8219407B43005556B4 /* CoreGraphics.framework */; };
+		2252AC8519407B43005556B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252AC8419407B43005556B4 /* UIKit.framework */; };
+		2252AC8719407B43005556B4 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252AC8619407B43005556B4 /* SpriteKit.framework */; };
+		2252AC8D19407B43005556B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2252AC8B19407B43005556B4 /* InfoPlist.strings */; };
+		2252AC8F19407B43005556B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AC8E19407B43005556B4 /* main.m */; };
+		2252AC9319407B43005556B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AC9219407B43005556B4 /* AppDelegate.m */; };
+		2252AC9619407B43005556B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2252AC9419407B43005556B4 /* Main.storyboard */; };
+		2252AC9919407B43005556B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AC9819407B43005556B4 /* ViewController.m */; };
+		2252AC9C19407B43005556B4 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AC9B19407B43005556B4 /* MyScene.m */; };
+		2252ACA019407B43005556B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2252AC9F19407B43005556B4 /* Images.xcassets */; };
+		2252ACA719407B43005556B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252ACA619407B43005556B4 /* XCTest.framework */; };
+		2252ACA819407B43005556B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252AC8019407B43005556B4 /* Foundation.framework */; };
+		2252ACA919407B43005556B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2252AC8419407B43005556B4 /* UIKit.framework */; };
+		2252ACB119407B43005556B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACAF19407B43005556B4 /* InfoPlist.strings */; };
+		2252ACB319407B43005556B4 /* PestControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252ACB219407B43005556B4 /* PestControlTests.m */; };
+		2252ACF819407BDB005556B4 /* characters.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACBF19407BDB005556B4 /* characters.atlas */; };
+		2252ACF919407BDB005556B4 /* scenery.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC019407BDB005556B4 /* scenery.atlas */; };
+		2252ACFA19407BDB005556B4 /* BugSplatter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC219407BDB005556B4 /* BugSplatter.sks */; };
+		2252ACFB19407BDB005556B4 /* FirebugSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC319407BDB005556B4 /* FirebugSmoke.sks */; };
+		2252ACFC19407BDB005556B4 /* FirebugSparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC419407BDB005556B4 /* FirebugSparks.sks */; };
+		2252ACFD19407BDB005556B4 /* Leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC519407BDB005556B4 /* Leaf.png */; };
+		2252ACFE19407BDB005556B4 /* PlayerHitWall.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC619407BDB005556B4 /* PlayerHitWall.sks */; };
+		2252ACFF19407BDB005556B4 /* PlayerTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC719407BDB005556B4 /* PlayerTrail.sks */; };
+		2252AD0019407BDB005556B4 /* Rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC819407BDB005556B4 /* Rock.png */; };
+		2252AD0119407BDB005556B4 /* Spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACC919407BDB005556B4 /* Spark.png */; };
+		2252AD0219407BDB005556B4 /* Splat.png in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACCA19407BDB005556B4 /* Splat.png */; };
+		2252AD0319407BDB005556B4 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACCB19407BDB005556B4 /* Star.png */; };
+		2252AD0419407BDB005556B4 /* TreeSmash.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACCC19407BDB005556B4 /* TreeSmash.sks */; };
+		2252AD0519407BDB005556B4 /* WaterDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACCD19407BDB005556B4 /* WaterDrop.png */; };
+		2252AD0619407BDB005556B4 /* DrownFireBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACCF19407BDB005556B4 /* DrownFireBug.mp3 */; };
+		2252AD0719407BDB005556B4 /* HitFireBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD019407BDB005556B4 /* HitFireBug.mp3 */; };
+		2252AD0819407BDB005556B4 /* HitTree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD119407BDB005556B4 /* HitTree.mp3 */; };
+		2252AD0919407BDB005556B4 /* HitWall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD219407BDB005556B4 /* HitWall.mp3 */; };
+		2252AD0A19407BDB005556B4 /* HitWater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD319407BDB005556B4 /* HitWater.mp3 */; };
+		2252AD0B19407BDB005556B4 /* KillBug-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD419407BDB005556B4 /* KillBug-1.mp3 */; };
+		2252AD0C19407BDB005556B4 /* KillBug-10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD519407BDB005556B4 /* KillBug-10.mp3 */; };
+		2252AD0D19407BDB005556B4 /* KillBug-11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD619407BDB005556B4 /* KillBug-11.mp3 */; };
+		2252AD0E19407BDB005556B4 /* KillBug-12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD719407BDB005556B4 /* KillBug-12.mp3 */; };
+		2252AD0F19407BDB005556B4 /* KillBug-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD819407BDB005556B4 /* KillBug-2.mp3 */; };
+		2252AD1019407BDB005556B4 /* KillBug-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACD919407BDB005556B4 /* KillBug-3.mp3 */; };
+		2252AD1119407BDB005556B4 /* KillBug-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACDA19407BDB005556B4 /* KillBug-4.mp3 */; };
+		2252AD1219407BDB005556B4 /* KillBug-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACDB19407BDB005556B4 /* KillBug-5.mp3 */; };
+		2252AD1319407BDB005556B4 /* KillBug-6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACDC19407BDB005556B4 /* KillBug-6.mp3 */; };
+		2252AD1419407BDB005556B4 /* KillBug-7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACDD19407BDB005556B4 /* KillBug-7.mp3 */; };
+		2252AD1519407BDB005556B4 /* KillBug-8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACDE19407BDB005556B4 /* KillBug-8.mp3 */; };
+		2252AD1619407BDB005556B4 /* KillBug-9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACDF19407BDB005556B4 /* KillBug-9.mp3 */; };
+		2252AD1719407BDB005556B4 /* Lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACE019407BDB005556B4 /* Lose.mp3 */; };
+		2252AD1819407BDB005556B4 /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACE119407BDB005556B4 /* Music.mp3 */; };
+		2252AD1919407BDB005556B4 /* PlayerMove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACE219407BDB005556B4 /* PlayerMove.mp3 */; };
+		2252AD1A19407BDB005556B4 /* TickTock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACE319407BDB005556B4 /* TickTock.mp3 */; };
+		2252AD1B19407BDB005556B4 /* Win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACE419407BDB005556B4 /* Win.mp3 */; };
+		2252AD1C19407BDB005556B4 /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252ACE719407BDB005556B4 /* SKTEffects.m */; };
+		2252AD1D19407BDB005556B4 /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252ACE919407BDB005556B4 /* SKTTimingFunctions.m */; };
+		2252AD1E19407BDB005556B4 /* juicy-level-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACEB19407BDB005556B4 /* juicy-level-bg.txt */; };
+		2252AD1F19407BDB005556B4 /* juicy-level-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACEC19407BDB005556B4 /* juicy-level-breakables.txt */; };
+		2252AD2019407BDB005556B4 /* juicy-level-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACED19407BDB005556B4 /* juicy-level-bugs.txt */; };
+		2252AD2119407BDB005556B4 /* JuicyLevels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACEE19407BDB005556B4 /* JuicyLevels.plist */; };
+		2252AD2219407BDB005556B4 /* level-1-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACEF19407BDB005556B4 /* level-1-bg.txt */; };
+		2252AD2319407BDB005556B4 /* level-1-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACF019407BDB005556B4 /* level-1-bugs.txt */; };
+		2252AD2419407BDB005556B4 /* level-2-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACF119407BDB005556B4 /* level-2-bg.txt */; };
+		2252AD2519407BDB005556B4 /* level-2-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACF219407BDB005556B4 /* level-2-breakables.txt */; };
+		2252AD2619407BDB005556B4 /* level-2-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACF319407BDB005556B4 /* level-2-bugs.txt */; };
+		2252AD2719407BDB005556B4 /* level-3-sample.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACF419407BDB005556B4 /* level-3-sample.tmx */; };
+		2252AD2819407BDB005556B4 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2252ACF519407BDB005556B4 /* Levels.plist */; };
+		2252AD2919407BDB005556B4 /* TileMapLayerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252ACF719407BDB005556B4 /* TileMapLayerLoader.m */; };
+		2252AD2C19407C2A005556B4 /* TileMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AD2B19407C2A005556B4 /* TileMapLayer.m */; };
+		2252AD3819407E35005556B4 /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AD2F19407E35005556B4 /* SKAction+SKTExtras.m */; };
+		2252AD3919407E35005556B4 /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AD3119407E35005556B4 /* SKEmitterNode+SKTExtras.m */; };
+		2252AD3A19407E35005556B4 /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AD3319407E35005556B4 /* SKNode+SKTExtras.m */; };
+		2252AD3B19407E35005556B4 /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252AD3519407E35005556B4 /* SKTAudio.m */; };
+		2252AD3C19407E35005556B4 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2252AD3719407E35005556B4 /* SKTUtils.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2252ACAA19407B43005556B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2252AC7519407B43005556B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2252AC7C19407B43005556B4;
+			remoteInfo = PestControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2252AC7D19407B43005556B4 /* PestControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2252AC8019407B43005556B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2252AC8219407B43005556B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2252AC8419407B43005556B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2252AC8619407B43005556B4 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		2252AC8A19407B43005556B4 /* PestControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PestControl-Info.plist"; sourceTree = "<group>"; };
+		2252AC8C19407B43005556B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2252AC8E19407B43005556B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2252AC9019407B43005556B4 /* PestControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PestControl-Prefix.pch"; sourceTree = "<group>"; };
+		2252AC9119407B43005556B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2252AC9219407B43005556B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2252AC9519407B43005556B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2252AC9719407B43005556B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2252AC9819407B43005556B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2252AC9A19407B43005556B4 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		2252AC9B19407B43005556B4 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		2252AC9F19407B43005556B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2252ACA519407B43005556B4 /* PestControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PestControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2252ACA619407B43005556B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2252ACAE19407B43005556B4 /* PestControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PestControlTests-Info.plist"; sourceTree = "<group>"; };
+		2252ACB019407B43005556B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2252ACB219407B43005556B4 /* PestControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PestControlTests.m; sourceTree = "<group>"; };
+		2252ACBF19407BDB005556B4 /* characters.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = characters.atlas; sourceTree = "<group>"; };
+		2252ACC019407BDB005556B4 /* scenery.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = scenery.atlas; sourceTree = "<group>"; };
+		2252ACC219407BDB005556B4 /* BugSplatter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BugSplatter.sks; sourceTree = "<group>"; };
+		2252ACC319407BDB005556B4 /* FirebugSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirebugSmoke.sks; sourceTree = "<group>"; };
+		2252ACC419407BDB005556B4 /* FirebugSparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirebugSparks.sks; sourceTree = "<group>"; };
+		2252ACC519407BDB005556B4 /* Leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaf.png; sourceTree = "<group>"; };
+		2252ACC619407BDB005556B4 /* PlayerHitWall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerHitWall.sks; sourceTree = "<group>"; };
+		2252ACC719407BDB005556B4 /* PlayerTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerTrail.sks; sourceTree = "<group>"; };
+		2252ACC819407BDB005556B4 /* Rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rock.png; sourceTree = "<group>"; };
+		2252ACC919407BDB005556B4 /* Spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spark.png; sourceTree = "<group>"; };
+		2252ACCA19407BDB005556B4 /* Splat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splat.png; sourceTree = "<group>"; };
+		2252ACCB19407BDB005556B4 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		2252ACCC19407BDB005556B4 /* TreeSmash.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TreeSmash.sks; sourceTree = "<group>"; };
+		2252ACCD19407BDB005556B4 /* WaterDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WaterDrop.png; sourceTree = "<group>"; };
+		2252ACCF19407BDB005556B4 /* DrownFireBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DrownFireBug.mp3; sourceTree = "<group>"; };
+		2252ACD019407BDB005556B4 /* HitFireBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitFireBug.mp3; sourceTree = "<group>"; };
+		2252ACD119407BDB005556B4 /* HitTree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitTree.mp3; sourceTree = "<group>"; };
+		2252ACD219407BDB005556B4 /* HitWall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitWall.mp3; sourceTree = "<group>"; };
+		2252ACD319407BDB005556B4 /* HitWater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitWater.mp3; sourceTree = "<group>"; };
+		2252ACD419407BDB005556B4 /* KillBug-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-1.mp3"; sourceTree = "<group>"; };
+		2252ACD519407BDB005556B4 /* KillBug-10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-10.mp3"; sourceTree = "<group>"; };
+		2252ACD619407BDB005556B4 /* KillBug-11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-11.mp3"; sourceTree = "<group>"; };
+		2252ACD719407BDB005556B4 /* KillBug-12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-12.mp3"; sourceTree = "<group>"; };
+		2252ACD819407BDB005556B4 /* KillBug-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-2.mp3"; sourceTree = "<group>"; };
+		2252ACD919407BDB005556B4 /* KillBug-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-3.mp3"; sourceTree = "<group>"; };
+		2252ACDA19407BDB005556B4 /* KillBug-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-4.mp3"; sourceTree = "<group>"; };
+		2252ACDB19407BDB005556B4 /* KillBug-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-5.mp3"; sourceTree = "<group>"; };
+		2252ACDC19407BDB005556B4 /* KillBug-6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-6.mp3"; sourceTree = "<group>"; };
+		2252ACDD19407BDB005556B4 /* KillBug-7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-7.mp3"; sourceTree = "<group>"; };
+		2252ACDE19407BDB005556B4 /* KillBug-8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-8.mp3"; sourceTree = "<group>"; };
+		2252ACDF19407BDB005556B4 /* KillBug-9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-9.mp3"; sourceTree = "<group>"; };
+		2252ACE019407BDB005556B4 /* Lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lose.mp3; sourceTree = "<group>"; };
+		2252ACE119407BDB005556B4 /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music.mp3; sourceTree = "<group>"; };
+		2252ACE219407BDB005556B4 /* PlayerMove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PlayerMove.mp3; sourceTree = "<group>"; };
+		2252ACE319407BDB005556B4 /* TickTock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TickTock.mp3; sourceTree = "<group>"; };
+		2252ACE419407BDB005556B4 /* Win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Win.mp3; sourceTree = "<group>"; };
+		2252ACE619407BDB005556B4 /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
+		2252ACE719407BDB005556B4 /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
+		2252ACE819407BDB005556B4 /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
+		2252ACE919407BDB005556B4 /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
+		2252ACEB19407BDB005556B4 /* juicy-level-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "juicy-level-bg.txt"; sourceTree = "<group>"; };
+		2252ACEC19407BDB005556B4 /* juicy-level-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "juicy-level-breakables.txt"; sourceTree = "<group>"; };
+		2252ACED19407BDB005556B4 /* juicy-level-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "juicy-level-bugs.txt"; sourceTree = "<group>"; };
+		2252ACEE19407BDB005556B4 /* JuicyLevels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JuicyLevels.plist; sourceTree = "<group>"; };
+		2252ACEF19407BDB005556B4 /* level-1-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-1-bg.txt"; sourceTree = "<group>"; };
+		2252ACF019407BDB005556B4 /* level-1-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-1-bugs.txt"; sourceTree = "<group>"; };
+		2252ACF119407BDB005556B4 /* level-2-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-2-bg.txt"; sourceTree = "<group>"; };
+		2252ACF219407BDB005556B4 /* level-2-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-2-breakables.txt"; sourceTree = "<group>"; };
+		2252ACF319407BDB005556B4 /* level-2-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-2-bugs.txt"; sourceTree = "<group>"; };
+		2252ACF419407BDB005556B4 /* level-3-sample.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "level-3-sample.tmx"; sourceTree = "<group>"; };
+		2252ACF519407BDB005556B4 /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		2252ACF619407BDB005556B4 /* TileMapLayerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapLayerLoader.h; sourceTree = "<group>"; };
+		2252ACF719407BDB005556B4 /* TileMapLayerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMapLayerLoader.m; sourceTree = "<group>"; };
+		2252AD2A19407C2A005556B4 /* TileMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapLayer.h; sourceTree = "<group>"; };
+		2252AD2B19407C2A005556B4 /* TileMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMapLayer.m; sourceTree = "<group>"; };
+		2252AD2E19407E35005556B4 /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		2252AD2F19407E35005556B4 /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		2252AD3019407E35005556B4 /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		2252AD3119407E35005556B4 /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		2252AD3219407E35005556B4 /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		2252AD3319407E35005556B4 /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		2252AD3419407E35005556B4 /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		2252AD3519407E35005556B4 /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		2252AD3619407E35005556B4 /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		2252AD3719407E35005556B4 /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2252AC7A19407B43005556B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2252AC8319407B43005556B4 /* CoreGraphics.framework in Frameworks */,
+				2252AC8519407B43005556B4 /* UIKit.framework in Frameworks */,
+				2252AC8719407B43005556B4 /* SpriteKit.framework in Frameworks */,
+				2252AC8119407B43005556B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2252ACA219407B43005556B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2252ACA719407B43005556B4 /* XCTest.framework in Frameworks */,
+				2252ACA919407B43005556B4 /* UIKit.framework in Frameworks */,
+				2252ACA819407B43005556B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2252AC7419407B43005556B4 = {
+			isa = PBXGroup;
+			children = (
+				2252AC8819407B43005556B4 /* PestControl */,
+				2252ACAC19407B43005556B4 /* PestControlTests */,
+				2252AC7F19407B43005556B4 /* Frameworks */,
+				2252AC7E19407B43005556B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2252AC7E19407B43005556B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2252AC7D19407B43005556B4 /* PestControl.app */,
+				2252ACA519407B43005556B4 /* PestControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2252AC7F19407B43005556B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2252AC8019407B43005556B4 /* Foundation.framework */,
+				2252AC8219407B43005556B4 /* CoreGraphics.framework */,
+				2252AC8419407B43005556B4 /* UIKit.framework */,
+				2252AC8619407B43005556B4 /* SpriteKit.framework */,
+				2252ACA619407B43005556B4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2252AC8819407B43005556B4 /* PestControl */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACBC19407BDB005556B4 /* Resources */,
+				2252AD2D19407E35005556B4 /* SKTUtils */,
+				2252AC9119407B43005556B4 /* AppDelegate.h */,
+				2252AC9219407B43005556B4 /* AppDelegate.m */,
+				2252AC9419407B43005556B4 /* Main.storyboard */,
+				2252AC9719407B43005556B4 /* ViewController.h */,
+				2252AC9819407B43005556B4 /* ViewController.m */,
+				2252AC9A19407B43005556B4 /* MyScene.h */,
+				2252AC9B19407B43005556B4 /* MyScene.m */,
+				2252AD2A19407C2A005556B4 /* TileMapLayer.h */,
+				2252AD2B19407C2A005556B4 /* TileMapLayer.m */,
+				2252AC9F19407B43005556B4 /* Images.xcassets */,
+				2252AC8919407B43005556B4 /* Supporting Files */,
+			);
+			path = PestControl;
+			sourceTree = "<group>";
+		};
+		2252AC8919407B43005556B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2252AC8A19407B43005556B4 /* PestControl-Info.plist */,
+				2252AC8B19407B43005556B4 /* InfoPlist.strings */,
+				2252AC8E19407B43005556B4 /* main.m */,
+				2252AC9019407B43005556B4 /* PestControl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2252ACAC19407B43005556B4 /* PestControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACB219407B43005556B4 /* PestControlTests.m */,
+				2252ACAD19407B43005556B4 /* Supporting Files */,
+			);
+			path = PestControlTests;
+			sourceTree = "<group>";
+		};
+		2252ACAD19407B43005556B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACAE19407B43005556B4 /* PestControlTests-Info.plist */,
+				2252ACAF19407B43005556B4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2252ACBC19407BDB005556B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACBD19407BDB005556B4 /* Art */,
+				2252ACE519407BDB005556B4 /* Extra Source Code */,
+				2252ACEA19407BDB005556B4 /* Levels */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2252ACBD19407BDB005556B4 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACBE19407BDB005556B4 /* Images */,
+				2252ACC119407BDB005556B4 /* Particles */,
+				2252ACCE19407BDB005556B4 /* Sounds */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		2252ACBE19407BDB005556B4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACBF19407BDB005556B4 /* characters.atlas */,
+				2252ACC019407BDB005556B4 /* scenery.atlas */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2252ACC119407BDB005556B4 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACC219407BDB005556B4 /* BugSplatter.sks */,
+				2252ACC319407BDB005556B4 /* FirebugSmoke.sks */,
+				2252ACC419407BDB005556B4 /* FirebugSparks.sks */,
+				2252ACC519407BDB005556B4 /* Leaf.png */,
+				2252ACC619407BDB005556B4 /* PlayerHitWall.sks */,
+				2252ACC719407BDB005556B4 /* PlayerTrail.sks */,
+				2252ACC819407BDB005556B4 /* Rock.png */,
+				2252ACC919407BDB005556B4 /* Spark.png */,
+				2252ACCA19407BDB005556B4 /* Splat.png */,
+				2252ACCB19407BDB005556B4 /* Star.png */,
+				2252ACCC19407BDB005556B4 /* TreeSmash.sks */,
+				2252ACCD19407BDB005556B4 /* WaterDrop.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		2252ACCE19407BDB005556B4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACCF19407BDB005556B4 /* DrownFireBug.mp3 */,
+				2252ACD019407BDB005556B4 /* HitFireBug.mp3 */,
+				2252ACD119407BDB005556B4 /* HitTree.mp3 */,
+				2252ACD219407BDB005556B4 /* HitWall.mp3 */,
+				2252ACD319407BDB005556B4 /* HitWater.mp3 */,
+				2252ACD419407BDB005556B4 /* KillBug-1.mp3 */,
+				2252ACD519407BDB005556B4 /* KillBug-10.mp3 */,
+				2252ACD619407BDB005556B4 /* KillBug-11.mp3 */,
+				2252ACD719407BDB005556B4 /* KillBug-12.mp3 */,
+				2252ACD819407BDB005556B4 /* KillBug-2.mp3 */,
+				2252ACD919407BDB005556B4 /* KillBug-3.mp3 */,
+				2252ACDA19407BDB005556B4 /* KillBug-4.mp3 */,
+				2252ACDB19407BDB005556B4 /* KillBug-5.mp3 */,
+				2252ACDC19407BDB005556B4 /* KillBug-6.mp3 */,
+				2252ACDD19407BDB005556B4 /* KillBug-7.mp3 */,
+				2252ACDE19407BDB005556B4 /* KillBug-8.mp3 */,
+				2252ACDF19407BDB005556B4 /* KillBug-9.mp3 */,
+				2252ACE019407BDB005556B4 /* Lose.mp3 */,
+				2252ACE119407BDB005556B4 /* Music.mp3 */,
+				2252ACE219407BDB005556B4 /* PlayerMove.mp3 */,
+				2252ACE319407BDB005556B4 /* TickTock.mp3 */,
+				2252ACE419407BDB005556B4 /* Win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2252ACE519407BDB005556B4 /* Extra Source Code */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACE619407BDB005556B4 /* SKTEffects.h */,
+				2252ACE719407BDB005556B4 /* SKTEffects.m */,
+				2252ACE819407BDB005556B4 /* SKTTimingFunctions.h */,
+				2252ACE919407BDB005556B4 /* SKTTimingFunctions.m */,
+			);
+			path = "Extra Source Code";
+			sourceTree = "<group>";
+		};
+		2252ACEA19407BDB005556B4 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				2252ACEB19407BDB005556B4 /* juicy-level-bg.txt */,
+				2252ACEC19407BDB005556B4 /* juicy-level-breakables.txt */,
+				2252ACED19407BDB005556B4 /* juicy-level-bugs.txt */,
+				2252ACEE19407BDB005556B4 /* JuicyLevels.plist */,
+				2252ACEF19407BDB005556B4 /* level-1-bg.txt */,
+				2252ACF019407BDB005556B4 /* level-1-bugs.txt */,
+				2252ACF119407BDB005556B4 /* level-2-bg.txt */,
+				2252ACF219407BDB005556B4 /* level-2-breakables.txt */,
+				2252ACF319407BDB005556B4 /* level-2-bugs.txt */,
+				2252ACF419407BDB005556B4 /* level-3-sample.tmx */,
+				2252ACF519407BDB005556B4 /* Levels.plist */,
+				2252ACF619407BDB005556B4 /* TileMapLayerLoader.h */,
+				2252ACF719407BDB005556B4 /* TileMapLayerLoader.m */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		2252AD2D19407E35005556B4 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2252AD2E19407E35005556B4 /* SKAction+SKTExtras.h */,
+				2252AD2F19407E35005556B4 /* SKAction+SKTExtras.m */,
+				2252AD3019407E35005556B4 /* SKEmitterNode+SKTExtras.h */,
+				2252AD3119407E35005556B4 /* SKEmitterNode+SKTExtras.m */,
+				2252AD3219407E35005556B4 /* SKNode+SKTExtras.h */,
+				2252AD3319407E35005556B4 /* SKNode+SKTExtras.m */,
+				2252AD3419407E35005556B4 /* SKTAudio.h */,
+				2252AD3519407E35005556B4 /* SKTAudio.m */,
+				2252AD3619407E35005556B4 /* SKTUtils.h */,
+				2252AD3719407E35005556B4 /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2252AC7C19407B43005556B4 /* PestControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2252ACB619407B43005556B4 /* Build configuration list for PBXNativeTarget "PestControl" */;
+			buildPhases = (
+				2252AC7919407B43005556B4 /* Sources */,
+				2252AC7A19407B43005556B4 /* Frameworks */,
+				2252AC7B19407B43005556B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PestControl;
+			productName = PestControl;
+			productReference = 2252AC7D19407B43005556B4 /* PestControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2252ACA419407B43005556B4 /* PestControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2252ACB919407B43005556B4 /* Build configuration list for PBXNativeTarget "PestControlTests" */;
+			buildPhases = (
+				2252ACA119407B43005556B4 /* Sources */,
+				2252ACA219407B43005556B4 /* Frameworks */,
+				2252ACA319407B43005556B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2252ACAB19407B43005556B4 /* PBXTargetDependency */,
+			);
+			name = PestControlTests;
+			productName = PestControlTests;
+			productReference = 2252ACA519407B43005556B4 /* PestControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2252AC7519407B43005556B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = KAjohansen;
+				TargetAttributes = {
+					2252ACA419407B43005556B4 = {
+						TestTargetID = 2252AC7C19407B43005556B4;
+					};
+				};
+			};
+			buildConfigurationList = 2252AC7819407B43005556B4 /* Build configuration list for PBXProject "PestControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2252AC7419407B43005556B4;
+			productRefGroup = 2252AC7E19407B43005556B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2252AC7C19407B43005556B4 /* PestControl */,
+				2252ACA419407B43005556B4 /* PestControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2252AC7B19407B43005556B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2252AD1219407BDB005556B4 /* KillBug-5.mp3 in Resources */,
+				2252ACFC19407BDB005556B4 /* FirebugSparks.sks in Resources */,
+				2252AD2119407BDB005556B4 /* JuicyLevels.plist in Resources */,
+				2252AD2619407BDB005556B4 /* level-2-bugs.txt in Resources */,
+				2252ACFE19407BDB005556B4 /* PlayerHitWall.sks in Resources */,
+				2252AD2519407BDB005556B4 /* level-2-breakables.txt in Resources */,
+				2252AD2319407BDB005556B4 /* level-1-bugs.txt in Resources */,
+				2252AD1B19407BDB005556B4 /* Win.mp3 in Resources */,
+				2252AD1119407BDB005556B4 /* KillBug-4.mp3 in Resources */,
+				2252AC8D19407B43005556B4 /* InfoPlist.strings in Resources */,
+				2252ACF919407BDB005556B4 /* scenery.atlas in Resources */,
+				2252AD0019407BDB005556B4 /* Rock.png in Resources */,
+				2252AD1F19407BDB005556B4 /* juicy-level-breakables.txt in Resources */,
+				2252AD0D19407BDB005556B4 /* KillBug-11.mp3 in Resources */,
+				2252AD0319407BDB005556B4 /* Star.png in Resources */,
+				2252AD1719407BDB005556B4 /* Lose.mp3 in Resources */,
+				2252AD2019407BDB005556B4 /* juicy-level-bugs.txt in Resources */,
+				2252AD1919407BDB005556B4 /* PlayerMove.mp3 in Resources */,
+				2252AD0C19407BDB005556B4 /* KillBug-10.mp3 in Resources */,
+				2252AD0519407BDB005556B4 /* WaterDrop.png in Resources */,
+				2252ACFB19407BDB005556B4 /* FirebugSmoke.sks in Resources */,
+				2252ACA019407B43005556B4 /* Images.xcassets in Resources */,
+				2252AD2219407BDB005556B4 /* level-1-bg.txt in Resources */,
+				2252ACFA19407BDB005556B4 /* BugSplatter.sks in Resources */,
+				2252AD0E19407BDB005556B4 /* KillBug-12.mp3 in Resources */,
+				2252AD1819407BDB005556B4 /* Music.mp3 in Resources */,
+				2252AD0B19407BDB005556B4 /* KillBug-1.mp3 in Resources */,
+				2252ACFD19407BDB005556B4 /* Leaf.png in Resources */,
+				2252ACF819407BDB005556B4 /* characters.atlas in Resources */,
+				2252AD1E19407BDB005556B4 /* juicy-level-bg.txt in Resources */,
+				2252AC9619407B43005556B4 /* Main.storyboard in Resources */,
+				2252ACFF19407BDB005556B4 /* PlayerTrail.sks in Resources */,
+				2252AD0119407BDB005556B4 /* Spark.png in Resources */,
+				2252AD2719407BDB005556B4 /* level-3-sample.tmx in Resources */,
+				2252AD0F19407BDB005556B4 /* KillBug-2.mp3 in Resources */,
+				2252AD0219407BDB005556B4 /* Splat.png in Resources */,
+				2252AD1319407BDB005556B4 /* KillBug-6.mp3 in Resources */,
+				2252AD0A19407BDB005556B4 /* HitWater.mp3 in Resources */,
+				2252AD0719407BDB005556B4 /* HitFireBug.mp3 in Resources */,
+				2252AD1619407BDB005556B4 /* KillBug-9.mp3 in Resources */,
+				2252AD0419407BDB005556B4 /* TreeSmash.sks in Resources */,
+				2252AD1519407BDB005556B4 /* KillBug-8.mp3 in Resources */,
+				2252AD1A19407BDB005556B4 /* TickTock.mp3 in Resources */,
+				2252AD1019407BDB005556B4 /* KillBug-3.mp3 in Resources */,
+				2252AD0819407BDB005556B4 /* HitTree.mp3 in Resources */,
+				2252AD0919407BDB005556B4 /* HitWall.mp3 in Resources */,
+				2252AD2819407BDB005556B4 /* Levels.plist in Resources */,
+				2252AD2419407BDB005556B4 /* level-2-bg.txt in Resources */,
+				2252AD0619407BDB005556B4 /* DrownFireBug.mp3 in Resources */,
+				2252AD1419407BDB005556B4 /* KillBug-7.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2252ACA319407B43005556B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2252ACB119407B43005556B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2252AC7919407B43005556B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2252AD1D19407BDB005556B4 /* SKTTimingFunctions.m in Sources */,
+				2252AD3B19407E35005556B4 /* SKTAudio.m in Sources */,
+				2252AC9C19407B43005556B4 /* MyScene.m in Sources */,
+				2252AD2C19407C2A005556B4 /* TileMapLayer.m in Sources */,
+				2252AD3819407E35005556B4 /* SKAction+SKTExtras.m in Sources */,
+				2252AD3C19407E35005556B4 /* SKTUtils.mm in Sources */,
+				2252AD2919407BDB005556B4 /* TileMapLayerLoader.m in Sources */,
+				2252AD1C19407BDB005556B4 /* SKTEffects.m in Sources */,
+				2252AC9919407B43005556B4 /* ViewController.m in Sources */,
+				2252AD3A19407E35005556B4 /* SKNode+SKTExtras.m in Sources */,
+				2252AC9319407B43005556B4 /* AppDelegate.m in Sources */,
+				2252AD3919407E35005556B4 /* SKEmitterNode+SKTExtras.m in Sources */,
+				2252AC8F19407B43005556B4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2252ACA119407B43005556B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2252ACB319407B43005556B4 /* PestControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2252ACAB19407B43005556B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2252AC7C19407B43005556B4 /* PestControl */;
+			targetProxy = 2252ACAA19407B43005556B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2252AC8B19407B43005556B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2252AC8C19407B43005556B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2252AC9419407B43005556B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2252AC9519407B43005556B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2252ACAF19407B43005556B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2252ACB019407B43005556B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2252ACB419407B43005556B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2252ACB519407B43005556B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2252ACB719407B43005556B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PestControl/PestControl-Prefix.pch";
+				INFOPLIST_FILE = "PestControl/PestControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2252ACB819407B43005556B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PestControl/PestControl-Prefix.pch";
+				INFOPLIST_FILE = "PestControl/PestControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2252ACBA19407B43005556B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PestControl.app/PestControl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PestControl/PestControl-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PestControlTests/PestControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2252ACBB19407B43005556B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PestControl.app/PestControl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PestControl/PestControl-Prefix.pch";
+				INFOPLIST_FILE = "PestControlTests/PestControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2252AC7819407B43005556B4 /* Build configuration list for PBXProject "PestControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2252ACB419407B43005556B4 /* Debug */,
+				2252ACB519407B43005556B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2252ACB619407B43005556B4 /* Build configuration list for PBXNativeTarget "PestControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2252ACB719407B43005556B4 /* Debug */,
+				2252ACB819407B43005556B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2252ACB919407B43005556B4 /* Build configuration list for PBXNativeTarget "PestControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2252ACBA19407B43005556B4 /* Debug */,
+				2252ACBB19407B43005556B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2252AC7519407B43005556B4 /* Project object */;
+}
